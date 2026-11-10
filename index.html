@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepshikha Roy | Digital Marketing Specialist &amp; AI Automation Professional</title>
+    <meta name="description" content="Deepshikha Roy is a Digital Marketing Specialist and AI Automation Professional with 4+ years of experience in Google Ads, SEO, WordPress, social media and AI-powered content creation.">
+    <meta name="author" content="Deepshikha Roy">
+    <meta name="theme-color" content="#0f1b3d">
+
+    <!-- Link previews (LinkedIn, WhatsApp, X) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Deepshikha Roy | Digital Marketing Specialist &amp; AI Automation Professional">
+    <meta property="og:description" content="4+ years in Google Ads, SEO, WordPress, social media and AI-powered content creation.">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy: #0f1b3d;
+            --navy-2: #1a2a5c;
+            --indigo: #4f46e5;
+            --teal: #0d9488;
+            --accent-grad: linear-gradient(120deg, #6366f1 0%, #14b8a6 100%);
+            --ink: #172033;
+            --muted: #5b6478;
+            --line: #e4e7ef;
+            --bg: #f6f7fb;
+            --card: #ffffff;
+            --soft-indigo: #eef0ff;
+            --soft-teal: #e6f6f4;
+            --radius: 16px;
+            --shadow: 0 1px 2px rgba(15, 27, 61, 0.04), 0 10px 30px rgba(15, 27, 61, 0.07);
+            --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            --font-head: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+        body {
+            margin: 0;
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.65;
+            color: var(--ink);
+            background: var(--bg);
+        }
+
+        h1, h2, h3 { font-family: var(--font-head); line-height: 1.2; margin: 0; }
+        a { color: var(--indigo); }
+        a:focus-visible, .btn:focus-visible {
+            outline: 3px solid #f5b942;
+            outline-offset: 3px;
+            border-radius: 6px;
+        }
+
+        .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* ---------- Navigation ---------- */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(15, 27, 61, 0.92);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .nav .wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+        }
+        .brand {
+            font-family: var(--font-head);
+            font-weight: 800;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        .brand span {
+            background: var(--accent-grad);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .nav ul { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; }
+        .nav ul a {
+            color: rgba(255, 255, 255, 0.78);
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 500;
+        }
+        .nav ul a:hover { color: #fff; }
+
+        /* ---------- Hero ---------- */
+        .hero {
+            position: relative;
+            overflow: hidden;
+            background: radial-gradient(1000px 500px at 85% -10%, rgba(99, 102, 241, 0.45), transparent 60%),
+                        radial-gradient(800px 400px at -10% 110%, rgba(20, 184, 166, 0.35), transparent 60%),
+                        var(--navy);
+            color: #fff;
+            padding: 72px 0 88px;
+        }
+        .hero .wrap {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        .badge::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #2dd4bf;
+            box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.2);
+        }
+        .hero h1 {
+            margin-top: 18px;
+            font-size: clamp(2.3rem, 5.5vw, 3.6rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        .hero .title {
+            margin: 12px 0 0;
+            font-family: var(--font-head);
+            font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+            font-weight: 700;
+            background: linear-gradient(120deg, #a5b4fc 0%, #5eead4 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .hero .location {
+            margin: 8px 0 0;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .hero .intro {
+            margin: 18px 0 0;
+            max-width: 560px;
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 22px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: transform 0.15s ease, background 0.2s ease;
+        }
+        .btn:hover { transform: translateY(-1px); }
+        .btn svg { width: 18px; height: 18px; fill: currentColor; }
+        .btn-primary { background: var(--accent-grad); color: #fff; box-shadow: 0 8px 24px rgba(79, 70, 229, 0.35); }
+        .btn-ghost { color: #fff; border: 1.5px solid rgba(255, 255, 255, 0.35); }
+        .btn-ghost:hover { background: rgba(255, 255, 255, 0.08); }
+
+        .portrait { position: relative; justify-self: center; }
+        .portrait::before {
+            content: "";
+            position: absolute;
+            inset: -10px;
+            border-radius: 32px;
+            background: var(--accent-grad);
+            opacity: 0.9;
+            transform: rotate(-4deg);
+        }
+        .portrait img {
+            position: relative;
+            display: block;
+            width: 300px;
+            height: 300px;
+            max-width: 100%;
+            border-radius: 28px;
+            object-fit: cover;
+            border: 4px solid var(--navy);
+        }
+
+        /* ---------- Stats ---------- */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: -44px;
+            position: relative;
+        }
+        .stat {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 20px 22px;
+        }
+        .stat strong {
+            display: block;
+            font-family: var(--font-head);
+            font-size: 1.9rem;
+            font-weight: 800;
+            background: var(--accent-grad);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .stat span { color: var(--muted); font-size: 0.93rem; }
+
+        /* ---------- Sections ---------- */
+        section.block { padding: 72px 0 0; }
+        .kicker {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--teal);
+        }
+        .block h2 {
+            margin-top: 6px;
+            font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            color: var(--navy);
+        }
+        .lead { margin: 12px 0 0; max-width: 720px; color: var(--muted); font-size: 1.05rem; }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 26px;
+        }
+
+        /* About */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 24px;
+            margin-top: 28px;
+        }
+        .about-grid p { margin: 0 0 14px; }
+        .about-grid p:last-child { margin-bottom: 0; }
+        .focus-list { list-style: none; margin: 0; padding: 0; }
+        .focus-list li {
+            display: flex;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px dashed var(--line);
+        }
+        .focus-list li:last-child { border-bottom: 0; }
+        .focus-list .dot {
+            flex-shrink: 0;
+            width: 10px;
+            height: 10px;
+            margin-top: 8px;
+            border-radius: 50%;
+            background: var(--accent-grad);
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-top: 28px;
+        }
+        .skill-card h3 { font-size: 1.02rem; color: var(--navy); }
+        .skill-icon {
+            display: grid;
+            place-items: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            margin-bottom: 14px;
+            background: var(--soft-indigo);
+            color: var(--indigo);
+        }
+        .skill-card:nth-child(even) .skill-icon { background: var(--soft-teal); color: var(--teal); }
+        .skill-icon svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+        .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; padding: 0; list-style: none; }
+        .chips li {
+            padding: 5px 12px;
+            border-radius: 999px;
+            background: var(--bg);
+            border: 1px solid var(--line);
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+
+        /* Experience timeline */
+        .timeline { position: relative; margin-top: 32px; padding-left: 28px; }
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 7px;
+            top: 6px;
+            bottom: 6px;
+            width: 2px;
+            background: linear-gradient(#6366f1, #14b8a6);
+            border-radius: 2px;
+        }
+        .job { position: relative; }
+        .job + .job { margin-top: 22px; }
+        .job::before {
+            content: "";
+            position: absolute;
+            left: -28px;
+            top: 30px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #fff;
+            border: 3px solid var(--indigo);
+        }
+        .job.current::before { border-color: var(--teal); box-shadow: 0 0 0 5px rgba(20, 184, 166, 0.18); }
+        .job-head {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 6px 16px;
+        }
+        .job h3 { font-size: 1.15rem; color: var(--navy); }
+        .company { margin: 2px 0 0; color: var(--muted); font-weight: 500; }
+        .dates {
+            font-size: 0.86rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 999px;
+            background: var(--soft-indigo);
+            color: var(--indigo);
+            white-space: nowrap;
+        }
+        .job.current .dates { background: var(--soft-teal); color: var(--teal); }
+        ul.points { margin: 14px 0 0; padding-left: 20px; }
+        ul.points li { margin-bottom: 6px; }
+        ul.points li::marker { color: var(--teal); }
+
+        /* Achievements */
+        .achieve-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-top: 28px;
+        }
+        .achieve h3 { font-size: 1.05rem; color: var(--navy); }
+        .achieve p { margin: 8px 0 0; color: var(--muted); }
+
+        /* Education */
+        .edu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 0.8fr;
+            gap: 18px;
+            margin-top: 28px;
+        }
+        .edu h3 { font-size: 1.05rem; color: var(--navy); }
+        .edu p { margin: 6px 0 0; color: var(--muted); }
+        .edu .year { margin-top: 12px; font-weight: 600; color: var(--indigo); font-size: 0.92rem; }
+
+        /* Contact */
+        .contact {
+            margin-top: 72px;
+            background: radial-gradient(700px 300px at 100% 0%, rgba(99, 102, 241, 0.45), transparent 60%),
+                        radial-gradient(600px 300px at 0% 100%, rgba(20, 184, 166, 0.35), transparent 60%),
+                        var(--navy);
+            color: #fff;
+            padding: 64px 0;
+        }
+        .contact h2 { color: #fff; font-size: clamp(1.6rem, 3.5vw, 2.1rem); font-weight: 800; }
+        .contact .kicker { color: #5eead4; }
+        .contact p { color: rgba(255, 255, 255, 0.8); max-width: 600px; }
+        .contact-links { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 20px;
+            border-radius: var(--radius);
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            color: #fff;
+            text-decoration: none;
+            min-width: 0;
+        }
+        .contact-link:hover { background: rgba(255, 255, 255, 0.1); }
+        .contact-link svg { width: 22px; height: 22px; fill: currentColor; flex-shrink: 0; }
+        .contact-link small { display: block; color: rgba(255, 255, 255, 0.6); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; }
+        .contact-link span { word-break: break-word; font-weight: 500; }
+
+        footer {
+            background: #0b1430;
+            color: rgba(255, 255, 255, 0.55);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.88rem;
+        }
+
+        /* ---------- Tablet ---------- */
+        @media (max-width: 960px) {
+            .skills-grid { grid-template-columns: repeat(2, 1fr); }
+            .edu-grid { grid-template-columns: 1fr 1fr; }
+            .about-grid { grid-template-columns: 1fr; }
+            .portrait img { width: 240px; height: 240px; }
+        }
+
+        /* ---------- Phone ---------- */
+        @media (max-width: 720px) {
+            .nav ul { display: none; }
+            .hero { padding: 48px 0 80px; }
+            .hero .wrap { grid-template-columns: 1fr; gap: 36px; text-align: center; }
+            .hero .intro { margin-left: auto; margin-right: auto; }
+            .actions { justify-content: center; }
+            .portrait { order: -1; }
+            .portrait img { width: 200px; height: 200px; }
+            .stats { grid-template-columns: 1fr; }
+            .skills-grid, .achieve-grid, .edu-grid { grid-template-columns: 1fr; }
+            section.block { padding-top: 56px; }
+            .card { padding: 22px; }
+            .contact-link { width: 100%; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            .btn { transition: none; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav" aria-label="Main">
+        <div class="wrap">
+            <a class="brand" href="#top">Deepshikha <span>Roy</span></a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="top">
+        <div class="wrap">
+            <div>
+                <span class="badge">Currently managing digital marketing for 5 companies</span>
+                <h1>Deepshikha Roy</h1>
+                <p class="title">Digital Marketing Specialist + AI Automation Professional</p>
+                <p class="location">Hyderabad, India</p>
+                <p class="intro">I help businesses grow with Google Ads, SEO, WordPress and social media, and I use AI tools to create images, videos and content faster.</p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="mailto:deepsroy55@gmail.com">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg>
+                        Email me
+                    </a>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/deepshikharoy15/" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="portrait">
+                <img src="Deepshikha.jpg" alt="Portrait of Deepshikha Roy" width="300" height="300">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrap">
+            <div class="stats" aria-label="At a glance">
+                <div class="stat"><strong>4+ years</strong><span>in digital marketing (since June 2022)</span></div>
+                <div class="stat"><strong>3</strong><span>companies worked with</span></div>
+                <div class="stat"><strong>5</strong><span>companies' digital marketing managed today</span></div>
+            </div>
+
+            <!-- About -->
+            <section class="block" id="about" aria-labelledby="about-title">
+                <span class="kicker">About me</span>
+                <h2 id="about-title">Professional introduction</h2>
+                <div class="about-grid">
+                    <div class="card">
+                        <p>I am a Digital Marketing Specialist with 4+ years of experience planning, running and optimising digital marketing for businesses. My work covers Google Search and Display Ads, keyword research, audience targeting, bid optimisation and A/B testing, with a focus on CTR, CPA and ROAS.</p>
+                        <p>Today I manage digital marketing for 5 companies, handling SEO, social media, WordPress websites and content, including articles and blogs.</p>
+                        <p>I use AI tools such as ChatGPT, together with prompt engineering, to create AI-generated images, basic AI videos and written content, so campaigns and content get produced faster.</p>
+                    </div>
+                    <div class="card">
+                        <h3 style="font-size:1.05rem;color:var(--navy)">What I focus on</h3>
+                        <ul class="focus-list">
+                            <li><span class="dot"></span><span>Performance campaigns on Google Search &amp; Display</span></li>
+                            <li><span class="dot"></span><span>SEO, WordPress and content that ranks</span></li>
+                            <li><span class="dot"></span><span>Social media marketing across multiple brands</span></li>
+                            <li><span class="dot"></span><span>AI-powered images, videos and copy</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="block" id="skills" aria-labelledby="skills-title">
+                <span class="kicker">Skills</span>
+                <h2 id="skills-title">What I bring</h2>
+                <div class="skills-grid">
+                    <div class="card skill-card">
+                        <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg></div>
+                        <h3>Paid Ads &amp; Performance</h3>
+                        <ul class="chips">
+                            <li>Google Ads Management</li>
+                            <li>Keyword Research</li>
+                            <li>Campaign Optimization</li>
+                            <li>Performance Analysis</li>
+                        </ul>
+                    </div>
+                    <div class="card skill-card">
+                        <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+                        <h3>SEO &amp; Website</h3>
+                        <ul class="chips">
+                            <li>SEO</li>
+                            <li>WordPress Management</li>
+                        </ul>
+                    </div>
+                    <div class="card skill-card">
+                        <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></div>
+                        <h3>AI &amp; Automation</h3>
+                        <ul class="chips">
+                            <li>AI Tools and Prompt Engineering</li>
+                            <li>AI Image and Video Creation</li>
+                        </ul>
+                    </div>
+                    <div class="card skill-card">
+                        <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16"/><path d="M6 16V9M12 16V5M18 16v-4"/></svg></div>
+                        <h3>Content, Social &amp; Strategy</h3>
+                        <ul class="chips">
+                            <li>Social Media Marketing</li>
+                            <li>Content and Blog Writing</li>
+                            <li>Digital Marketing Strategy</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section class="block" id="experience" aria-labelledby="experience-title">
+                <span class="kicker">Experience</span>
+                <h2 id="experience-title">Work experience</h2>
+                <div class="timeline">
+                    <article class="card job current">
+                        <div class="job-head">
+                            <div>
+                                <h3>Digital Marketing Executive</h3>
+                                <p class="company">RBT Racks &amp; Shelves Metal Alloys Trading Co. LLC</p>
+                            </div>
+                            <span class="dates">Dec 2025 – Present</span>
+                        </div>
+                        <ul class="points">
+                            <li>Managing digital marketing for 5 companies, including brand presence, online visibility and day-to-day marketing operations.</li>
+                            <li>Creating AI-generated images and basic AI videos for social media and promotional campaigns.</li>
+                            <li>WordPress website management.</li>
+                            <li>SEO and social media management.</li>
+                            <li>Content, article and blog writing to support brand visibility and business growth.</li>
+                        </ul>
+                    </article>
+                    <article class="card job">
+                        <div class="job-head">
+                            <div>
+                                <h3>Digital Marketing Executive</h3>
+                                <p class="company">Zuper LED</p>
+                            </div>
+                            <span class="dates">Feb 2024 – Dec 2025</span>
+                        </div>
+                        <ul class="points">
+                            <li>Google Search and Display Ads management.</li>
+                            <li>Keyword research, audience targeting and bid optimization.</li>
+                            <li>Campaign performance analysis.</li>
+                            <li>A/B testing and CTR, CPA and ROAS optimization.</li>
+                            <li>Using AI tools such as ChatGPT to support content creation and campaign planning.</li>
+                            <li>Collaborated with design and content teams on ad creatives and consistent brand messaging.</li>
+                        </ul>
+                    </article>
+                    <article class="card job">
+                        <div class="job-head">
+                            <div>
+                                <h3>Digital Marketing Executive</h3>
+                                <p class="company">TAG Overseas Consultancy</p>
+                            </div>
+                            <span class="dates">Jun 2022 – Jan 2024</span>
+                        </div>
+                        <ul class="points">
+                            <li>Google Ads campaign management and optimization.</li>
+                            <li>Keyword research and campaign performance analysis.</li>
+                            <li>Campaign optimization and lead generation.</li>
+                            <li>Coordinated with Google Ads Support to resolve account and campaign issues.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Automation Projects section: hidden until real projects are provided. -->
+
+            <!-- Achievements -->
+            <section class="block" id="achievements" aria-labelledby="achievements-title">
+                <span class="kicker">Highlights</span>
+                <h2 id="achievements-title">Achievements</h2>
+                <div class="achieve-grid">
+                    <div class="card achieve">
+                        <h3>Digital marketing for 5 companies</h3>
+                        <p>Currently responsible for SEO, social media, WordPress websites and content for five companies at RBT Racks &amp; Shelves Metal Alloys Trading Co. LLC.</p>
+                    </div>
+                    <div class="card achieve">
+                        <h3>4+ years across three companies</h3>
+                        <p>Continuous digital marketing experience since June 2022, growing from Google Ads campaigns into SEO, social media, content and AI-powered creative.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="block" id="education" aria-labelledby="education-title">
+                <span class="kicker">Education</span>
+                <h2 id="education-title">Education &amp; languages</h2>
+                <div class="edu-grid">
+                    <div class="card edu">
+                        <h3>Post Graduate Diploma in Management (Marketing)</h3>
+                        <p>Indian Institute of Business Management, Patna</p>
+                        <p class="year">2020 – 2022</p>
+                    </div>
+                    <div class="card edu">
+                        <h3>Bachelor of Computer Applications (BCA)</h3>
+                        <p>Magadh University</p>
+                        <p class="year">2015 – 2018</p>
+                    </div>
+                    <div class="card edu">
+                        <h3>Languages</h3>
+                        <ul class="chips">
+                            <li>English</li>
+                            <li>Hindi</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact -->
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <div class="wrap">
+                <span class="kicker">Contact</span>
+                <h2 id="contact-title">Let's work together</h2>
+                <p>Looking for help with Google Ads, SEO, social media or AI-powered content? Get in touch by email or on LinkedIn.</p>
+                <div class="contact-links">
+                    <a class="contact-link" href="mailto:deepsroy55@gmail.com">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg>
+                        <div><small>Email</small><span>deepsroy55@gmail.com</span></div>
+                    </a>
+                    <a class="contact-link" href="https://www.linkedin.com/in/deepshikharoy15/" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                        <div><small>LinkedIn</small><span>linkedin.com/in/deepshikharoy15</span></div>
+                    </a>
+                    <div class="contact-link">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+                        <div><small>Location</small><span>Hyderabad, India</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">&copy; Deepshikha Roy. All rights reserved.</div>
+    </footer>
+</body>
+</html>
